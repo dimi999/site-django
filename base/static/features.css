@@ -1,0 +1,151 @@
+.top_nav{
+  background-color: rgb(84, 233, 246, 0.5);
+  overflow: hidden;
+  margin: 0px
+}
+
+.container{
+  width: 500px;
+  height: 400px;
+  background-color: red;
+  display: block;
+}
+
+.top_nav a{
+  float: right;
+  color: rgb(60, 60, 60);
+  text-align: center;
+  padding:14px 16px;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.top_nav a.active{
+  background-color: rgb(255, 0, 79, 0.75);
+  color: white;
+  float: left;
+}
+
+.league_menu{
+    display: inline-block;
+    margin-top: 150px;
+    width: 300px;
+    list-style-type: none;
+}
+
+.league_menu > li > a {
+  background: rgb(255, 210, 88, 0.85);
+  color: #fff;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 20px;
+  width: 300px;
+}
+
+.league_menu ul{
+  background: #ddd;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s ease;
+  width: 300px;
+  list-style-type: none;
+}
+
+.league_menu ul > li > a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.league_menu li:hover ul{
+  height: 200px;
+}
+
+.tournament{
+    display: inline-block;
+    margin-top: 150px;
+    width: 300px;
+    list-style-type: none;
+    float: left;
+}
+
+.tournament > li > a {
+  background: rgb(0, 210, 88, 0.85);
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  width: 300px;
+}
+
+.tournament ul{
+  background: #ddd;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s ease;
+  width: 300px;
+  list-style-type: none;
+}
+
+.tournament ul > li > a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.tournament li:hover ul{
+  height: 200px;
+}
+
+.pots{
+    display: inline-block;
+    margin-top: 150px;
+    width: 300px;
+    list-style-type: none;
+    float: left;
+}
+
+.pots > li > a {
+  background: rgb(110, 110, 88, 0.85);
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  width: 300px;
+}
+
+.pots ul{
+  background: #ddd;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s ease;
+  width: 300px;
+  list-style-type: none;
+}
+
+.pots ul > li > a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.pots li:hover ul{
+  height: 200px;
+}
+
+.Gotobtn{
+  position: relative;
+  left: 30%;
+  padding: 8px 10px;
+  font-size: 15px;
+  color: rgb(240, 242, 244);
+  background-color: rgb(127, 4, 133, 0.9);
+  border: solid 2px black;
+  text-decoration: none;
+}

@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Schedule creator</title>
+    <link rel = "stylesheet" href = "{% static 'register.css'%}">
+    <style>
+        body{
+          background-image: url("{% static 'Homepage-Background.jpg' %}");
+          background-repeat: no-repeat;
+          background-size:cover;
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class = "top_nav">
+        <a class = "active" href ="/home"><b>Schedule Creator</b></a>
+        <a href ="/login"><b>Login</b></a>
+        <a href ="/register"><b>Register</b></a>
+        <a style = "font-size: 32px"><b>|</b></a>
+        <a href ="/about"><b>About</b></a>
+    </div>
+
+      <div class = 'register_text'>
+        <h3>Register</h3>
+      </div>
+
+      <div class = 'form_container'>
+        <br></br>
+        <form method="POST" action="">
+            {% csrf_token %}
+          <label for="username">Username:</label>
+          <br></br>
+          <input type="text" id="username" name="username">
+          <br></br>
+          <label for="email">Email:</label>
+          <br></br>
+          <input type="email" id="email" name="email">
+          <br></br>
+          <label for="password1">Password:</label>
+          <br></br>
+          <input type="password" id="password1" name="password1">
+          <br></br>
+          <label for="password2">Re-enter password:</label>
+          <br></br>
+          <input type="password" id="password2" name="password2">
+          <br></br>
+          <br></br>
+          <br></br>
+          <input type="submit" name="Create User">
+        </form>
+        {{form.errors}}
+      </div>
+
+  </body>
+</html>

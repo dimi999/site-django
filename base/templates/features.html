@@ -1,0 +1,91 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Schedule creator</title>
+    <link rel = "stylesheet" href = "{% static 'features.css'%}">
+    <style>
+        body{
+          background-image: url("{% static 'Homepage-Background.jpg' %}");
+          background-repeat: no-repeat;
+          background-size:cover;
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0
+        }
+
+        img{
+          height: 300px;
+          display: inline-block;
+          margin-right: 200px;
+          margin-left: 50px;
+        }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class = "top_nav">
+        <a class = "active" href ="/"><b>Schedule Creator</b></a>
+        <a href = ""><b>Hello, {{user.username}}</b></a>
+        <a style = "font-size: 32px"><b>|</b></a>
+        <a href ="/about"><b>About</b></a>
+    </div>
+
+    <h1 style = "text-align: center; margin-bottom: 0px;">Feel the game</h2>
+
+      <ul class = "league_menu">
+        <li>
+          <a href = "/">League generator</a>
+
+          <ul>
+            <li><a href="/">1</a></li>
+            <li><a href="/">2</a></li>
+            <li><a href="/">3</a></li>
+            <li><a href="/">4</a></li>
+            <a href = "/" class="Gotobtn"><b>Go to</b></a>
+          </ul>
+
+
+        </li>
+      </ul>
+
+      <ul class="tournament">
+        <li>
+          <a href = "/">Tournament generator</a>
+
+          <ul>
+            <li><a href="/">1</a></li>
+            <li><a href="/">2</a></li>
+            <li><a href="/">3</a></li>
+            <li><a href="/">4</a></li>
+            <a href = "/" class="Gotobtn"><b>Go to</b></a>
+          </ul>
+
+
+        </li>
+      </ul>
+
+      <ul class="pots">
+        <li>
+          <a href = "/">Pots generator</a>
+
+          <ul>
+            <li><a href="/">1</a></li>
+            <li><a href="/">2</a></li>
+            <li><a href="/">3</a></li>
+            <li><a href="/">4</a></li>
+            <a href = "/" class="Gotobtn"><b>Go to</b></a>
+          </ul>
+        </li>
+      </ul>
+
+      <img src="{% static 'soccer.jpg' %}" style = "position: absolute; bottom: 15px; left: 0px;"></img>
+      <img src="{% static 'tenis.jpg' %}"  style = "position: absolute; bottom: 15px; left: 600px;"></img>
+      <img src="{% static 'basket.jpg' %}" style = "position: absolute; bottom: 15px; left: 1420px;"></img>
+</html>
